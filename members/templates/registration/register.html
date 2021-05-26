@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>
+      {% block title %}
+      Blog
+      {% endblock %}
+    </title>
+  </head>
+  <body onload="get_cap()">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="{% url 'home' %}">Blog!</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+
+
+
+      {% if user.is_authenticated %}
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'add_post' %}">Add A Public Post</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'add_private' %}">Add A Private Post</a>
+        </li>
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'pp' %}">Public Blogs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'add_category' %}">Add Category</a>
+        </li>
+       <!-- Category Menu Code -->
+      {% if cat_menu %}
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categories
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+
+          {% for item in cat_menu %}
+           <a class="dropdown-item" href="{% url 'category' item|slugify %}">{{ item }}</a>
+          {% endfor %}
+
+
+        </div>
+      </li>
+      {% else %}
+
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'category-list' %}">Categories</a>
+        </li>
+
+      {% endif %}
+
+
+
+      {% else %}
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'register' %}">Register</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'login' %}">Login</a>
+        </li>
+
+      {% endif %}
+
+
+
+
+
+    </ul>
+{% if user.is_authenticated %}
+
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ user.first_name }}
+            {{ user.last_name }}
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{% url 'edit_profile' %}">Edit Settings</a>
+
+            {% if user.profile.id %}
+              <a class="dropdown-item" href="{% url 'edit_profile_page' user.profile.id %}">Edit Profile Page</a>
+
+              <a class="dropdown-item" href="{% url 'show_profile_page' user.profile.id %}">Show Profile Page</a>
+
+
+            {% else %}
+            <a class="dropdown-item" href="{% url 'create_profile_page' %}">Create Profile Page</a>
+
+
+
+
+            {% endif %}
+
+
+          <a class="dropdown-item" href="{% url 'logout' %}">Logout</a>
+
+
+
+          </div>
+      </li>
+
+
+
+    </ul>
+
+{% endif %}
+
+  </div>
+</nav>
+
+
+
+    <br/>
+    <div class="container">
+    
+
+<h1>Register...</h1>
+<br/><br/>
+
+		<script type="text/javascript">
+	function get_cap(){
+	data1 = Math.round(10* Math.random());
+	console.log(data1)
+	data2 = Math.round(10* Math.random());
+	str=` Verify Capcha ${data1}+ ${data2}?`
+	console.log(str);
+	document.querySelector("#captcha").innerHTML=str;
+	sum=data1+data2;
+
+	}
+
+</script>
+<div class="form-group">
+	<form method="POST">
+		{% csrf_token %}
+		{{ form.as_p }}
+  		<p id="captcha"></p>
+
+    <input type="text" id="txt" >
+		<button  class="btn btn-secondary">Register</button>
+	</form>
+</div>
+
+
+
+
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
