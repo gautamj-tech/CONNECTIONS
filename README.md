@@ -1,2 +1,2 @@
 # MAIT-CONNECTIONS
-![Image of Yaktocat](https://github.com/gautamj-tech/MAIT-CONNECTIONS/tree/main/readmeimg/gautamj-tech_MAIT-CONNECT - Google Chrome 26-05-2021 22_57_30.png)
+![Image of Yaktocat](https://github.com/gautamj-tech/MAIT-CONNECTIONS/blob/main/readmeimg/Upload%20files%20%C2%B7%20gautamj-tech_MAIT-CONNECT%20-%20Google%20Chrome%2026-05-2021%2022_57_30.png)
