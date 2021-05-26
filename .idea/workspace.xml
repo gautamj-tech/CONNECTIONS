@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0eb693d9-0e9f-41d6-a70d-0b63d5dd772c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/djangoblog-master.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ablog/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ablog/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ablog/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ablog/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ablog/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/check.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/cricket.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/dogs2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/football.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/map.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/mede.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/mede_O36ZW0s.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/mountain.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/profile/Profile200x200.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/profile/mede.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/profile/mede_XqRhquW.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/images/school.jfif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/members/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/members/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/members/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/members/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/members/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/members/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/members/templates/registration/change-password.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/members/templates/registration/create_user_profile_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/members/templates/registration/edit_profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/members/templates/registration/edit_profile_page.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/members/templates/registration/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/members/templates/registration/password_success.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/members/templates/registration/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/members/templates/registration/user_profile.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/members/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/members/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/members/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/theblog/images/default_profile_pic.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/migrations/0002_post_title_tag.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/migrations/0003_auto_20200417_0912.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/migrations/0004_auto_20200427_0828.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/migrations/0005_post_likes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/migrations/0006_auto_20200604_0823.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/migrations/0007_post_snippet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/migrations/0008_auto_20200623_0832.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/migrations/0009_profile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/migrations/0010_auto_20200630_0818.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/migrations/0011_comment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/migrations/0012_profile_post.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/migrations/0013_remove_profile_post.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/migrations/0014_private.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/migrations/0015_private_username.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/templates/add_category.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/templates/add_comment.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/templates/add_post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/templates/article_details.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/templates/base.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/templates/categories.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/templates/category_list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/templates/delete_post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/templates/pp.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/templates/privatepost.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/templates/update_post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/theblog/views.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1t5DWQ8vU5HNGihkybcVtktVQh0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0eb693d9-0e9f-41d6-a70d-0b63d5dd772c" name="Default Changelist" comment="" />
+      <created>1622050090805</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622050090805</updated>
+    </task>
+    <servers />
+  </component>
+</project>
